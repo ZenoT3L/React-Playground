@@ -1,7 +1,7 @@
 function Facebook() {
   return (
     <>
-      <div className="facebook-page">
+      <div className="facebook-page page">
         <h1>Facebook</h1>
       </div>
     </>
