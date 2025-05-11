@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Image from "./components/Image";
 import src from "./components/imgsrc";
-import Facebook from "./components/Facebook";
+import Facebook from "./components/facebook/Facebook";
 import Instagram from "./components/Instagram";
 import LinkedIn from "./components/LinkedIn";
 import Youtube from "./components/Youtube";

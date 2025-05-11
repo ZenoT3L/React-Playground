@@ -91,7 +91,7 @@ img {
 .facebook-page {
   width: 100vw;
   height: 100vh;
-  background-color: #fff;
+  background-color: #f8f8f8;
 }
 
 .instagram-page h1 {
@@ -114,4 +114,90 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.fbook-header {
+  display: flex;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.facebook-page input {
+  font-size: 1rem;
+  width: 23rem;
+  height: 2rem;
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 5px;
+  margin: 7px 0;
+  padding: 1.4rem 1.375rem;
+}
+
+.submit {
+  width: 23rem;
+  height: 3.25rem;
+  border-radius: 6px;
+  margin: 7px 0;
+  border-style: none;
+  background-color: #1877f2;
+  color: #fff;
+  font-size: 1.25rem;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.forgot-password {
+  color: #1877f2;
+  font-size: 0.85rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.signup {
+  cursor: pointer;
+  background-color: #36a420;
+  border: none;
+  padding: 0 1rem;
+  border-radius: 6px;
+  font-size: 1.0625rem;
+  line-height: 3rem;
+  color: #fff;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+hr {
+  width: 23rem;
+  border-style: none;
+  border-bottom: 1px solid #c0c0c0;
+  margin: 1.25rem 1rem;
+}
+
+.fbook-login-container {
+  border-radius: 6px;
+  background-color: #fff;
+  margin: 15px;
+  padding: 10px 0;
+  box-shadow: 0 0 0.5375rem 0 rgba(139, 139, 139, 0.5);
+}
+
+.submit:hover {
+  background-color: #2a8af8;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.signup:hover {
+  background-color: #278d12;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
