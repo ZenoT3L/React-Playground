@@ -4,13 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
 h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -25,15 +18,36 @@ img {
 
 .container {
   position: fixed;
-  left: 50%;
+  left: 3.125rem;
+  top: 50%;
+  transform: translateY(-50%);
   background-color: #ffffffde;
-  transform: translateX(-50%);
-  top: 3.125rem;
   display: flex;
-  padding: 0.625rem;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.25rem;
   border-radius: 0.625rem;
-  box-shadow: 0 0 0.9375rem 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0.9375rem 0 rgba(126, 126, 126, 0.5);
   z-index: 1000;
+  gap: 1.25rem;
+}
+
+.Facebook,
+.Instagram,
+.LinkedIn,
+.YouTube {
+  width: 3.125rem;
+  height: 3.125rem;
+  margin: 0;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform: scale(1);
+}
+
+.Facebook:hover,
+.Instagram:hover,
+.LinkedIn:hover,
+.YouTube:hover {
+  transform: scale(1.1);
 }
 
 .Facebook {
@@ -41,8 +55,7 @@ img {
 }
 
 .Facebook:hover {
-  box-shadow: 0 0 0.9375rem 0.625rem rgba(24, 119, 242, 0.7);
-  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: 0 0 0.9375rem 0.425rem rgba(24, 119, 242, 0.7);
 }
 
 .Instagram {
@@ -50,8 +63,8 @@ img {
 }
 
 .Instagram:hover {
-  box-shadow: 0 0 0.9375rem 0.625rem rgba(225, 48, 108, 0.5);
-  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: 0 0 0.9375rem 0.425rem rgba(225, 48, 108, 0.5);
+  transform: scale(1.1);
 }
 
 .LinkedIn {
@@ -59,8 +72,7 @@ img {
 }
 
 .LinkedIn:hover {
-  box-shadow: 0 0 0.9375rem 0.625rem rgba(10, 102, 194, 0.5);
-  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: 0 0 0.9375rem 0.425rem rgba(10, 102, 194, 0.5);
 }
 
 .YouTube {
@@ -69,8 +81,7 @@ img {
 }
 
 .YouTube:hover {
-  box-shadow: 0 0 0.9375rem 0.625rem rgba(255, 0, 0, 0.5);
-  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: 0 0 0.9375rem 0.425rem rgba(255, 0, 0, 0.5);
 }
 
 .instagram-page {
@@ -132,10 +143,16 @@ form {
   font-size: 1rem;
   width: 23rem;
   height: 2rem;
-  border: 1px solid rgb(207, 207, 207);
+  border: 1px solid #cfcfcf;
   border-radius: 5px;
   margin: 7px 0;
   padding: 1.4rem 1.375rem;
+}
+
+.facebook-page input:focus {
+  outline: none;
+  border: 1px solid #1877f2;
+  box-shadow: 0 0 0.15rem 0 rgb(62, 169, 202);
 }
 
 .submit {
